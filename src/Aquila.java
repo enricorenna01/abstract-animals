@@ -1,4 +1,4 @@
-class Aquila extends Animale{
+class Aquila extends Animale implements InterfacciaVolare{
 
     @Override
     void mangia() {
@@ -10,4 +10,8 @@ class Aquila extends Animale{
         System.out.println("UHUUU!");
     }
 
+    @Override
+    public void vola(){
+        System.out.println("Sono un aquila e sto volando...");
+    };
 }
